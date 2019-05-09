@@ -284,6 +284,10 @@ https://github.com/seata/seata/
 
 windows下启动提示“输入行太长”，可修改seata-server.bat文件内set CLASSPATH="%BASEDIR%"\conf;"%REPO%"\*
 
+## 7、参考示例
+
+https://github.com/spring-cloud-incubator/spring-cloud-alibaba/blob/master/spring-cloud-alibaba-examples/seata-example/readme-zh.md
+
 # 七、演示源码
 
 ## 1、Github
