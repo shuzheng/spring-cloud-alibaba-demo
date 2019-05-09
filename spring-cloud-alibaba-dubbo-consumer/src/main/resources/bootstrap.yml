@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: spring-cloud-alibaba-dubbo-consumer
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: localhost:9999
+
+server:
+  port: 8090
+
+dubbo:
+  scan:
+    base-packages: cn.zhangshuzheng.spring.cloud.alibaba.dubbo.consumer.dubbo
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
